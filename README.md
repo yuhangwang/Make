@@ -17,7 +17,7 @@ You can download the compiled binary files at the [release page](https://github.
 * Compiler: gcc version 4.4.7 20120313 (Red Hat 4.4.7-11)
 
 ### Compilation steps
-#### Version: 8.6.4
+#### Version: 3.82
 ```bash
 wget http://ftp.gnu.org/gnu/make/make-3.82.tar.gz
 tar xvf make-3.82.tar.gz
