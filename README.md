@@ -23,7 +23,19 @@ wget http://ftp.gnu.org/gnu/make/make-3.82.tar.gz
 tar xvf make-3.82.tar.gz
 mkdir build_make-3.82
 cd build_make-3.82
-../make-3.82/unix/configure --prefix=/home/steven/install/make/3.82 
+../make-3.82/configure --prefix=/home/steven/install/make/3.82 
+make -j16
+make check -j16 | tee QualityVerification.txt
+make install
+```
+
+#### Version: 4.1
+```bash
+wget http://ftp.gnu.org/gnu/make/make-4.1.tar.bz2
+tar xvf make-4.1.tar.bz2
+mkdir build_make-4.1
+cd build_make-4.1
+../make-4.1/configure --prefix=/home/steven/install/make/4.1
 make -j16
 make check -j16 | tee QualityVerification.txt
 make install
