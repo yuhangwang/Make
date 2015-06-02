@@ -1,0 +1,154 @@
+Making check in glob
+make[1]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/glob'
+make[1]: Nothing to be done for `check'.
+make[1]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/glob'
+Making check in config
+make[1]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/config'
+make[1]: Nothing to be done for `check'.
+make[1]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/config'
+Making check in po
+make[1]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/po'
+make[1]: Nothing to be done for `check'.
+make[1]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/po'
+Making check in doc
+make[1]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/doc'
+make[1]: Nothing to be done for `check'.
+make[1]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2/doc'
+make[1]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2'
+make  loadavg
+make[2]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2'
+/usr/bin/gcc -DLOCALEDIR=\"/Scr/scr-test-steven/install/make/3.82/share/locale\" -DLIBDIR=\"/Scr/scr-test-steven/install/make/3.82/lib\" -DINCLUDEDIR=\"/Scr/scr-test-steven/install/make/3.82/include\" -DHAVE_CONFIG_H -I. -I../make-3.82  -DTEST   -g -O2 -MT loadavg-getloadavg.o -MD -MP -MF .deps/loadavg-getloadavg.Tpo -c -o loadavg-getloadavg.o `test -f 'getloadavg.c' || echo '../make-3.82/'`getloadavg.c
+mv -f .deps/loadavg-getloadavg.Tpo .deps/loadavg-getloadavg.Po
+/usr/bin/gcc  -g -O2   -o loadavg loadavg-getloadavg.o  -lrt 
+make[2]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2'
+make  check-local
+make[2]: Entering directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2'
+The system uptime program believes the load average to be:
+uptime
+ 10:13:35 up 14:19, 12 users,  load average: 0.54, 0.56, 1.37
+The GNU load average checking code thinks:
+./loadavg
+1-minute: 0.540000  5-minute: 0.560000  15-minute: 1.370000  
+cd tests && perl ./run_make_tests.pl -make ../make 
+------------------------------------------------------------------------------
+Running tests for GNU make on Linux juneau.ks.uiuc.edu 2.6.32-504.16.2.el6.x86_64 x86_64
+                                GNU Make 3.82
+------------------------------------------------------------------------------
+
+Finding tests...
+
+features/comments ....................................... ok     (1 passed)
+features/conditionals ................................... ok     (4 passed)
+features/default_names .................................. ok     (3 passed)
+features/double_colon ................................... ok     (10 passed)
+features/echoing ........................................ ok     (4 passed)
+features/errors ......................................... ok     (2 passed)
+features/escape ......................................... ok     (6 passed)
+features/export ......................................... ok     (12 passed)
+features/include ........................................ ok     (10 passed)
+features/mult_rules ..................................... ok     (2 passed)
+features/mult_targets ................................... ok     (2 passed)
+features/order_only ..................................... ok     (10 passed)
+features/override ....................................... ok     (4 passed)
+features/parallelism .................................... ok     (8 passed)
+features/patspecific_vars ............................... ok     (10 passed)
+features/patternrules ................................... ok     (10 passed)
+features/quoting ........................................ ok     (1 passed)
+features/recursion ...................................... ok     (2 passed)
+features/reinvoke ....................................... ok     (4 passed)
+features/se_explicit .................................... ok     (9 passed)
+features/se_implicit .................................... ok     (9 passed)
+features/se_statpat ..................................... ok     (4 passed)
+features/statipattrules ................................. ok     (8 passed)
+features/targetvars ..................................... ok     (23 passed)
+features/varnesting ..................................... ok     (1 passed)
+features/vpath .......................................... ok     (2 passed)
+features/vpath2 ......................................... ok     (1 passed)
+features/vpath3 ......................................... ok     (1 passed)
+features/vpathgpath ..................................... ok     (1 passed)
+features/vpathplus ...................................... ok     (4 passed)
+functions/abspath ....................................... ok     (1 passed)
+functions/addprefix ..................................... ok     (1 passed)
+functions/addsuffix ..................................... ok     (2 passed)
+functions/andor ......................................... ok     (2 passed)
+functions/basename ...................................... ok     (1 passed)
+functions/call .......................................... ok     (2 passed)
+functions/dir ........................................... ok     (1 passed)
+functions/error ......................................... ok     (5 passed)
+functions/eval .......................................... ok     (9 passed)
+functions/filter-out .................................... ok     (1 passed)
+functions/findstring .................................... ok     (1 passed)
+functions/flavor ........................................ ok     (1 passed)
+functions/foreach ....................................... ok     (4 passed)
+functions/if ............................................ ok     (1 passed)
+functions/join .......................................... ok     (1 passed)
+functions/notdir ........................................ ok     (1 passed)
+functions/origin ........................................ ok     (1 passed)
+functions/realpath ...................................... ok     (2 passed)
+functions/shell ......................................... ok     (2 passed)
+functions/sort .......................................... ok     (1 passed)
+functions/strip ......................................... ok     (2 passed)
+functions/substitution .................................. ok     (3 passed)
+functions/suffix ........................................ ok     (1 passed)
+functions/value ......................................... ok     (1 passed)
+functions/warning ....................................... ok     (4 passed)
+functions/wildcard ...................................... ok     (4 passed)
+functions/word .......................................... ok     (16 passed)
+misc/close_stdout ....................................... ok     (1 passed)
+misc/general1 ........................................... ok     (1 passed)
+misc/general2 ........................................... ok     (1 passed)
+misc/general3 ........................................... ok     (10 passed)
+misc/general4 ........................................... ok     (6 passed)
+options/dash-B .......................................... ok     (8 passed)
+options/dash-C .......................................... ok     (2 passed)
+options/dash-I .......................................... ok     (3 passed)
+options/dash-W .......................................... ok     (10 passed)
+options/dash-e .......................................... ok     (1 passed)
+options/dash-f .......................................... ok     (4 passed)
+options/dash-k .......................................... ok     (3 passed)
+options/dash-l .......................................... ok     (1 passed)
+options/dash-n .......................................... ok     (4 passed)
+options/dash-q .......................................... ok     (8 passed)
+options/dash-t .......................................... ok     (2 passed)
+options/eval ............................................ ok     (2 passed)
+options/general ......................................... ok     (1 passed)
+options/symlinks ........................................ ok     (10 passed)
+options/warn-undefined-variables ........................ ok     (2 passed)
+targets/DEFAULT ......................................... ok     (1 passed)
+targets/FORCE ........................................... ok     (1 passed)
+targets/INTERMEDIATE .................................... ok     (8 passed)
+targets/ONESHELL ........................................ ok     (5 passed)
+targets/PHONY ........................................... ok     (1 passed)
+targets/POSIX ........................................... ok     (2 passed)
+targets/SECONDARY ....................................... ok     (12 passed)
+targets/SILENT .......................................... ok     (1 passed)
+targets/clean ........................................... ok     (2 passed)
+variables/CURDIR ........................................ ok     (1 passed)
+variables/DEFAULT_GOAL .................................. ok     (5 passed)
+variables/INCLUDE_DIRS .................................. ok     (2 passed)
+variables/LIBPATTERNS ................................... ok     (2 passed)
+variables/MAKE .......................................... ok     (1 passed)
+variables/MAKECMDGOALS .................................. ok     (3 passed)
+variables/MAKEFILES ..................................... ok     (2 passed)
+variables/MAKEFLAGS ..................................... ok     (2 passed)
+variables/MAKELEVEL ..................................... ok     (1 passed)
+variables/MAKE_RESTARTS ................................. ok     (3 passed)
+variables/MFILE_LIST .................................... ok     (1 passed)
+variables/SHELL ......................................... ok     (7 passed)
+variables/automatic ..................................... ok     (7 passed)
+variables/define ........................................ ok     (15 passed)
+variables/flavors ....................................... ok     (6 passed)
+variables/negative ...................................... ok     (4 passed)
+variables/private ....................................... ok     (8 passed)
+variables/special ....................................... ok     (2 passed)
+variables/undefine ...................................... ok     (4 passed)
+
+428 Tests in 105 Categories Complete ... No Failures :-)
+
+
+=====================================================================================
+ Regression PASSED: GNU Make 3.82 (x86_64-unknown-linux-gnu) built with /usr/bin/gcc 
+=====================================================================================
+
+make[2]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2'
+make[1]: Leaving directory `/Scr/scr-test-steven/Programs/Make/build_make-3.8.2'
